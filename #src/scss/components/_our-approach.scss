@@ -1,0 +1,49 @@
+.our-approach {
+  padding-top: 181px;
+  padding-bottom: 52px;
+}
+.approach {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  &__container {
+    &__img-wrapper {
+      display: flex;
+    }
+    &__heading {
+      &__title {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        padding-bottom: 4px;
+      }
+      &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        max-width: 255px;
+      }
+    }
+  }
+}
+.svg-box {
+  width: 72px;
+  height: 72px;
+  background: #fafafa;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  @include flex;
+}
+.line-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+.line-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+}

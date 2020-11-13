@@ -1,0 +1,30 @@
+.homepage {
+  background-color: $bg-black;
+  padding-top: 174px;
+  padding-bottom: 175px;
+}
+.home {
+  display: flex;
+  &__heading {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 80px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+  }
+}
