@@ -3,11 +3,62 @@
   justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 100px;
+  @include mobile-w {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  &__image {
+    @include laptop {
+      width: 50%;
+    }
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile-w {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+    &__img {
+      @include laptop {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile-w {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
 }
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include laptop {
+    width: 40%;
+  }
+  @include tablet {
+    width: 40%;
+  }
+  @include mobile-w {
+    width: 90%;
+    margin: auto;
+  }
+  @include mobile {
+    width: 90%;
+    margin: auto;
+  }
   &__title {
     margin-bottom: 24px;
   }
@@ -22,7 +73,20 @@
     padding-left: 24px;
     color: $placeholder;
     font-size: 15px;
+    @include laptop {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile-w {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
+
   &__input::placeholder {
     color: $placeholder;
   }
@@ -34,5 +98,17 @@
   &__btn {
     margin-top: 16px;
     width: 486px;
+    @include laptop {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile-w {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
 }

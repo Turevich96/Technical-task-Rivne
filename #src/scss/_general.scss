@@ -8,13 +8,16 @@
   @include laptop {
     width: 80%;
   }
+  @include tablet {
+    width: 90%;
+  }
 
   @include mobile-w {
-    width: 80%;
+    width: 90%;
   }
 
   @include mobile {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -30,6 +33,15 @@
   line-height: 64px;
   letter-spacing: 0em;
   text-align: left;
+  @include mobile-w {
+    font-size: 28px;
+    text-align: center;
+  }
+  @include mobile {
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+  }
 }
 
 // Buttons
@@ -46,6 +58,21 @@
   text-align: center;
   border: none;
   outline: none;
+  @include tablet {
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+  }
+  @include mobile-w {
+    height: 30px;
+    width: 70px;
+    font-size: 11px;
+  }
+  @include mobile {
+    height: 30px;
+    width: 50px;
+    font-size: 11px;
+  }
 }
 .btn-small:hover {
   background-color: $btn-hover;

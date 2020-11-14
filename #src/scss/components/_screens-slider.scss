@@ -1,10 +1,60 @@
 .screens-slider {
   padding-top: 100px;
   padding-bottom: 36px;
+  @include mobile-w {
+    padding-top: 30px;
+    overflow: hidden;
+  }
+  @include mobile {
+    padding-top: 30px;
+    overflow: hidden;
+  }
 }
 .slider {
   position: relative;
   max-width: 860px;
   margin: 0 auto;
   margin-top: 96px;
+  @include tablet {
+    width: 85%;
+  }
+  @include mobile-w {
+    width: 100%;
+    margin-top: 50px;
+  }
+  @include mobile {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.slide {
+  width: 100%;
+}
+
+.prev {
+  position: absolute;
+  top: 40%;
+  left: -66px;
+  @include mobile-w {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+.next,
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  right: -66px;
+  @include mobile-w {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+.next:hover,
+.prev:hover {
+  cursor: pointer;
 }
