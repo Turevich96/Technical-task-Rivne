@@ -477,6 +477,15 @@ a {
           align-items: center;
 }
 
+.line-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .line-box__line {
   width: 100%;
 }

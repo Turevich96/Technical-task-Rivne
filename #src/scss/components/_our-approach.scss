@@ -95,6 +95,8 @@
   }
 }
 .line-box {
+  display: flex;
+  align-items: center;
   @include tablet {
     width: calc(100% - 80px);
     justify-content: center;
