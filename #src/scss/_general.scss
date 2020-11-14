@@ -50,6 +50,7 @@
 .btn-small:hover {
   background-color: $btn-hover;
   color: $btn-purpule;
+  cursor: pointer;
 }
 
 .btn-big {
@@ -59,7 +60,7 @@
   border-radius: 8px;
   color: $white;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
@@ -70,4 +71,5 @@
 .btn-big:hover {
   background-color: $btn-hover;
   color: $btn-purpule;
+  cursor: pointer;
 }

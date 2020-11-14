@@ -5,6 +5,7 @@
 }
 .home {
   display: flex;
+  justify-content: space-between;
   &__heading {
     color: $white;
     display: flex;
@@ -19,6 +20,7 @@
       margin-bottom: 16px;
     }
     &__subtitle {
+      max-width: 540px;
       font-size: 18px;
       font-weight: 400;
       line-height: 32px;
