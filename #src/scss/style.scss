@@ -1,0 +1,15 @@
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+@import "_responsive";
+@import "_general";
+@import "_icons";
+
+// sections
+@import "components/burger-menu";
+@import "components/header";
+@import "components/homepage";
+@import "components/our-approach";
+@import "components/screens-slider";
+@import "components/contact-form";
+@import "components/footer";

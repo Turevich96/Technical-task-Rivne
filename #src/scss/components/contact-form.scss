@@ -1,0 +1,111 @@
+.section-form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include mobile-w {
+    padding: 20px 0 60px 0;
+  }
+  @include mobile {
+    padding: 20px 0 60px 0;
+  }
+
+  &__image {
+    @include laptop {
+      width: 50%;
+    }
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile-w {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+    &__img {
+      @include laptop {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile-w {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include laptop {
+    width: 40%;
+  }
+  @include tablet {
+    width: 40%;
+  }
+  @include mobile-w {
+    width: 90%;
+    margin: auto;
+  }
+  @include mobile {
+    width: 90%;
+    margin: auto;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__input {
+    width: 486px;
+    height: 45px;
+    background: $input;
+    border-radius: 8px;
+    border: none;
+    margin: 8px 0 8px 0;
+    padding-left: 24px;
+    color: $placeholder;
+    font-size: 15px;
+    @include laptop {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile-w {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__input::placeholder {
+    color: $placeholder;
+  }
+  &__input:focus {
+    border: none;
+    outline: none;
+    color: $placeholder;
+  }
+  &__btn {
+    margin-top: 16px;
+    width: 486px;
+    @include laptop {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile-w {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

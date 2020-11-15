@@ -1,0 +1,115 @@
+.homepage {
+  background-color: $bg-black;
+  padding: 174px 0 175px 0;
+  height: calc(100vh - 72px);
+  min-height: 650px;
+  @include desktop {
+    height: 750px;
+  }
+  @include laptop {
+    display: flex;
+    align-items: center;
+    height: 750px;
+  }
+  @include tablet {
+    max-height: 1000px;
+  }
+  @include mobile-w {
+    min-height: auto;
+    height: calc(100vh - 72px);
+    padding: 0px;
+    @include flex;
+    padding-bottom: 30px;
+  }
+  @include mobile {
+    height: calc(100vh - 72px);
+    @include flex;
+    padding: 0 0 10px 0;
+  }
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+
+  &__heading {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 80px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 16px;
+      @include tablet {
+        font-size: 60px;
+      }
+      @include mobile-w {
+        font-size: 40px;
+        margin-bottom: 5px;
+      }
+      @include mobile {
+        font-size: 40px;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+    }
+    &__subtitle {
+      max-width: 540px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 24px;
+      @include tablet {
+        font-size: 16px;
+      }
+      @include mobile-w {
+        font-size: 16px;
+      }
+      @include mobile {
+        font-size: 15px;
+        margin: auto;
+        margin-bottom: 24px;
+      }
+    }
+    &__btn {
+      @include mobile {
+        margin: auto;
+      }
+    }
+  }
+  &__image {
+    @include laptop {
+      width: 60%;
+    }
+    @include tablet {
+      width: 90%;
+    }
+    @include mobile-w {
+      width: 90%;
+      display: none;
+    }
+    @include mobile {
+      width: 90%;
+      display: none;
+    }
+    &__img {
+      @include laptop {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile-w {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
