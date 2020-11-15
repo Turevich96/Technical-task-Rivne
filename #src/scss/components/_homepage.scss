@@ -4,9 +4,13 @@
   padding-bottom: 175px;
   height: calc(100vh - 72px);
   min-height: 650px;
+  @include desktop {
+    height: 750px;
+  }
   @include laptop {
     display: flex;
     align-items: center;
+    height: 750px;
   }
   @include tablet {
     max-height: 1000px;

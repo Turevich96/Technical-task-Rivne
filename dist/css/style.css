@@ -721,6 +721,12 @@ a {
   margin-right: 12px;
 }
 
+@media (min-width: 1390px) {
+  .homepage {
+    height: 750px;
+  }
+}
+
 @media (max-width: 575px) {
   .container {
     width: 90%;
@@ -984,6 +990,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 750px;
   }
 
   .home__image {
